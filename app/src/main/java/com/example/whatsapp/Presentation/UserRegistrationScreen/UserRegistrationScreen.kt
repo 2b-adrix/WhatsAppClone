@@ -21,7 +21,6 @@ import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalTextStyle
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TextField
@@ -167,7 +166,7 @@ fun UserRegistrationScreen(
        Text(
            text = "Carrier charges may apply",
            fontSize = 12.sp,
-           color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f)
+           color = colorResource(id = R.color.light_Green)
        )
                 Spacer(modifier = Modifier.height(26.dp))
 
@@ -188,7 +187,7 @@ fun UserRegistrationScreen(
             shape = RoundedCornerShape(6.dp),
             colors = ButtonDefaults.buttonColors(colorResource(id = R.color.Dark_Green))
         ) {
-            Text(text = "Next", fontSize = 16.sp)
+            Text(text = "Next", fontSize = 16.sp,color = Color.White)
         }
     }
     }    // Handle auth state changes
