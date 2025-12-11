@@ -90,7 +90,7 @@ fun HomeScreen(navHostController: NavHostController)
                 Icon(
                     painter = painterResource(id = R.drawable.chat_icon),
                     contentDescription = null,
-                    modifier = Modifier.size(28.dp)
+                    modifier = Modifier.size(28.dp),
                 )
             }
         },        bottomBar = {
